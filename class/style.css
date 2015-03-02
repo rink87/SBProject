@@ -1,0 +1,21 @@
+#date {
+	color: blue;
+	font-family: Roboto;
+	font-size: 15px;
+	text-align: center;
+	border: 1px solid #89892E;
+	border-radius: 5px;
+	background-color: rgba(132, 186, 95, 0.5);
+}
+
+.title {
+	font-family: Roboto;
+	font-size: 60px;
+	text-align: center;
+}
+
+#subheader {
+	display: inline;
+	margin-left: 300px;
+	margin-right: 300px;
+}
