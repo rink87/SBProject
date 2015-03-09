@@ -9,40 +9,35 @@
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 20px;
-	border: 1px solid #fff;
 }
 
 .top {
 	height: 100vh;
 	padding-top: 100px;
-	background-image: url('img/CompLayoutBG.jpg');
+}
+
+body {
+	background-image: url('img/MountainRoadBG.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover;
 }
 
 .top h1 {
 	font-family: Roboto;
 	font-size: 60px;
 	text-align: center;
-	color: black;
+	color: white;
 	background-color: rgba(176, 219, 238, 0.5);
 	border-radius: 10px;
 	margin-top: 100px;
-}
-
-h1 {
-	font-family: Roboto;
-	font-size: 60px;
-	text-align: center;
-	color: white;
 }
 
 nav {
 	background-color: #115883;
 	display: block;
 	height: 50px;
+	position: fixed;
 	width: 100%;
 }
 
@@ -91,14 +86,14 @@ nav {
 	float: right;
 }
 
-#summary {
+.summary {
 	height: auto;
 	width: 100%;
 	background-color: #3D3D3D;
 	display: inline-block;
 }
 
-#summary h2 {
+.summary h2 {
 	font-family: Roboto;
 	color: white;
 	text-align: center;
@@ -115,14 +110,7 @@ nav {
 	width: 15%;
 }
 
-p {
-	font-family: Roboto Thin;
-	font-size: 20px;
-	color: white;
-	text-align: center;
-}
-
-#summary p {
+.summary p {
 	font-family: Roboto Thin;
 	font-size: 20px;
 	padding: 00px 50px 30px 50px;
@@ -132,65 +120,55 @@ p {
 	width: 80%;
 }
 
-.projects {
+.tiles {
 	display: block;
-	height: 100vh;
-	background-image: url('img/TableBG.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
 }
 
-.projects h1 {
-	background-color: rgba(176, 219, 238, 0.5);
-	width: auto;
+.tiles :hover {
+	-webkit-box-shadow: inset 10px 10px 59px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 10px 10px 59px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 10px 10px 59px 0px rgba(0,0,0,0.75);
 }
-	
-.skills {
-	display: block;
-	height: 200px;
-	background-color: #3D3D3D;
-	width: 100%;
-}	
 
-.skills h4 {
-	font-family: Roboto Thin;
+.tiles h2 {
+	margin-top: 170px;
 	font-size: 30px;
+	font-family: Roboto;
 	color: white;
+}
+
+#tile1 {
+	width: 50%;
+	height: 50vh;
+	background-color: #74B1CD;
+	display: inline;
+	float: left;
 	text-align: center;
-	margin-top: 50px;
 }
 
-#skill1, #skill2, #skill3, #skill4 {
-	display: inline-block;
-	width: 25%;
-	float: left;
-}
-
-.contact {
-	height: 100vh;
-	background-image: url('img/MountainRoadBG.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-}
-
-#contactForm {
-	display: inline;
+#tile2 {
 	width: 50%;
-	float: left;
-}
-
-#map {
+	height: 50vh;
+	background-color: #808AD5;
 	display: inline;
-	width: 50%;
-	float: left;
+	float: right;
+	text-align: center;
 }
 
-.footer {
-	display: block;
-	height: 200px;
-	background-color: #3D3D3D;
+#tile3 {
+	width: 50%;
+	height: 50vh;	
+	background-color: #FFDF88;
+	display: inline;
+	float: left;
+	text-align: center;
+}
+
+#tile4 {
+	width: 50%;
+	height: 50vh;	
+	background-color: #FFC98B;
+	display: inline;
+	float: right;
+	text-align: center;
 }
